@@ -3,7 +3,7 @@ UNICORN.ROLES README
 Thanks for installing Unicorn.Roles! Here are some tips to get you started:
 
 First, you should set up a configuration. This can either be an existing Unicorn configuration that includes items, or a roles-only configuration at your discretion.
-Make a copy of App_Config/Include/Unicorn/Unicorn.Configs.Default.Roles.config.example and rename it to .config. You can place this file anywhere in App_Config/Include, such as Include/MySite/Unicorn.Configs.MySiteSecurity.config.
+Make a copy of App_Config/Modules/Unicorn/Unicorn.Configs.Default.Roles.config.example and rename it to .config. You can place this file anywhere in App_Config/Modules, such as Include/MySite/Unicorn.Configs.MySiteSecurity.config.
 Review the comments in the example configuration file and edit the values as you see fit (especially the rolePredicate settings, which control what is included).
 
 Run a build, so that the Unicorn.Roles assemblies are copied to your bin folder. If you develop out of webroot you may need to deploy or something as well.

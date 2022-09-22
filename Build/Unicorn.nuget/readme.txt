@@ -31,10 +31,10 @@ ABSOLUTELY DO READ THIS :P
 Thanks for installing Unicorn! Here are some tips to get you started:
 
 First, you should set up a configuration. This tells Unicorn what you want to keep serialized, among other things. 
-Make a copy of App_Config/Include/Unicorn/Unicorn.Configs.Default.example and rename it to .config. You can place this file anywhere in App_Config/Include, such as Include/MySite/Unicorn.Configs.MySite.config.
+Make a copy of App_Config/Modules/Unicorn/Unicorn.Configs.Default.example and rename it to .config. You can place this file anywhere in App_Config/Modules, such as Include/MySite/Unicorn.Configs.MySite.config.
 Review the comments in the example configuration file and edit the values as you see fit (especially the predicate settings, which control what is included).
 
-It's probably also worth it to review the other App_Config\Include\Unicorn\*.config files too: make sure they're to your liking.
+It's probably also worth it to review the other App_Config\Modules\Unicorn\*.config files too: make sure they're to your liking.
 In particular, the TargetDataStore in Unicorn.config controls where serialized items are written to (it defaults to $(dataFolder)\Unicorn).
 If you alter any of the defaults, do it in config patches so that you leave the default configuration intact.
 

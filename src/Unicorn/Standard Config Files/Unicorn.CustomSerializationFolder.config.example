@@ -62,8 +62,7 @@
 			<defaults>
 				<!--
 					VERY IMPORTANT: THIS CONFIG MUST LOAD AFTER THE REGULAR UNICORN CONFIGURATION TO PATCH THE DEFAULTS
-					Sitecore config patch files load in alphabetical order, followed by folders.
-					So either place this in App_Config/Include/Unicorn, or a folder that loads after that like 'zSite'
+					So either place this in App_Config/Include, or App_Config/Environment
 					-->
 				<targetDataStore>
 					<patch:attribute name="physicalRootPath">c:\path-to-source\Unicorn\$(configurationName)</patch:attribute>

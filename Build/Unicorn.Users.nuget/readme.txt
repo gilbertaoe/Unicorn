@@ -4,7 +4,7 @@ Thanks for installing Unicorn.Users! Here are some tips to get you started:
 
 First, you should set up a configuration. This can either be an existing Unicorn configuration that includes items, or a users-only configuration at your discretion. 
 You may colocate items, roles, and users or any combination thereof in a single configuration.
-Make a copy of App_Config/Include/Unicorn/Unicorn.Configs.Default.Users.config.example and rename it to .config. You can place this file anywhere in App_Config/Include, such as Include/MySite/Unicorn.Configs.MySiteSecurity.config.
+Make a copy of App_Config/Modules/Unicorn/Unicorn.Configs.Default.Users.config.example and rename it to .config. You can place this file anywhere in App_Config/Modules, such as Include/MySite/Unicorn.Configs.MySiteSecurity.config.
 Review the comments in the example configuration file and edit the values as you see fit (especially the userPredicate settings, which control what is included).
 
 Run a build, so that the Unicorn.Users assemblies are copied to your bin folder. If you develop out of webroot you may need to deploy or something as well.

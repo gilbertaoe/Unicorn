@@ -91,7 +91,7 @@ Ok, ok. Shut up about crypto and tell me how to set it up.
 3. To call the tool API from a script, a PowerShell module is provided. Acquire the module and its supporting files from the `packages\Unicorn.version\tools\PSAPI` folder of where you installed the Unicorn NuGet package. (Alternatively, it's also in  `doc\PowerShell Remote Scripting` folder of the Unicorn git repository, however this is always the latest and not necessarily matching your installed Unicorn version)
 4. Review the `sample.ps1` file and adapt it to your needs, including putting the shared secret into it and setting the URL as needed. Don't worry the guts of `sample.ps1` are two simple lines of code :)
 
-NOTE: When deploying to a Content Editing or Content Delivery server, the Unicorn configuration should be trimmed down from development. Each config file in `App_Config/Include/Unicorn` has comments at the top designating what environment(s) it should live on. If you opt to use Transparent Sync as a deployment mechanism, make sure you do not disable the data provider config file.
+NOTE: When deploying to a Content Editing or Content Delivery server, the Unicorn configuration should be trimmed down from development. Each config file in `App_Config/Modules/Unicorn` has comments at the top designating what environment(s) it should live on. If you opt to use Transparent Sync as a deployment mechanism, make sure you do not disable the data provider config file.
 
 [Darren Guy](https://twitter.com/DarrenGuy) has written a practical dissertation on his experiences setting up [Unicorn 3 with TeamCity and Octopus Deploy](https://thesoftwaredudeblog.wordpress.com/2016/05/24/building-a-continuous-integration-environment-for-sitecore-part-8-using-unicorn-for-sitecore-item-syncronization/) that goes all the way from install to automated deployment. A recommended read if you're wanting to use a similar setup.
 
@@ -116,7 +116,7 @@ _Note: these rules concern the default Evaluator only. This is probably what mak
 * Place a copy of your Sitecore.Kernel.dll assembly in /lib/sitecore/v7 (for v7/v8)
 * Build the project for your Sitecore version using Visual Studio 2012 or later
 * Copy Unicorn.dll, Rainbow.dll, Rainbow.Storage.Sc.dll, Rainbow.Storage.Yaml.dll and Kamsar.WebConsole.dll to your main project in whatever fashion you wish (project reference, as binary references, etc)
-* Copy `Standard Config Files\*.config` to the `App_Config\Include\Unicorn` folder
+* Copy `Standard Config Files\*.config` to the `App_Config\Modules\Unicorn` folder
 * Configure to your liking; the [setup README file](https://github.com/kamsar/Unicorn/blob/master/Build/Unicorn.nuget/readme.txt) is a good starting point.
 * Hit $yoursite/unicorn.aspx to perform initial serialization of your configured predicate
 
